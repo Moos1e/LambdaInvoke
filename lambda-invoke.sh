@@ -1,6 +1,7 @@
 #!/bin/bash
 
 aws lambda invoke \
-    --function-name arn:aws:lambda:us-west-2:030316125638:function:testshell \
+    --function-name <<Lambda Function>> \
     --invocation-type DryRun \
+    --region <<Region>>
     outfile.txt
